@@ -1,0 +1,22 @@
+{
+  "name": "p5js-for-learning",
+  "version": "1.0.0",
+  "description": "Going to be writing p5 js code designed to learn JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseRivas1998/p5js-for-learning.git"
+  },
+  "author": "",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/JoseRivas1998/p5js-for-learning/issues"
+  },
+  "homepage": "https://github.com/JoseRivas1998/p5js-for-learning#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
