@@ -5,11 +5,11 @@
  * is when a system is not told to do something complex, but its simple rules can lead to complex behavior.
  *
  * Part of cellular automata is the concept of a neighbor, a cell's neighbor is a cell that is touching it either
- * directly above, below, the the left, or to the right, as well as the diagonals. When dealing with this, the neighbors
+ * directly above, below, to the left, or to the right, as well as the diagonals. When dealing with this, the neighbors
  * are referred by their cardinal direction, north, south, east and west. Most cellular automata games base the rules
  * on how many neighbors are alive.
  *
- * This brings us to John Conway. John Coway was a mathematician born in 1937 and unfortunately left us due to COVID-19
+ * This brings us to John Conway. John Conway was a mathematician born in 1937 and unfortunately left us due to COVID-19
  * in 2020. He is famous for inventing a cellular automata game known as Conway's Game of Life. It is famous for how
  * complex of behaviors come out of incredibly simple rules. The rules are as follows:
  *
