@@ -1,3 +1,9 @@
+/*
+ * Simple butterfly curve demonstration, it is another polar graph similar to the lesson 1 bonus. Here is some
+ * more information on the formula used to generate the curve:
+ * https://en.wikipedia.org/wiki/Butterfly_curve_(transcendental)
+ */
+
 let angle = 0;
 function setup() {
     createCanvas(400, 400);
