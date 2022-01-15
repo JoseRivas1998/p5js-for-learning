@@ -4,7 +4,7 @@ let lastFrameSpawned = 0;
 let timeToNextSpawn;
 
 function setup() {
-    createCanvas(displayWidth * 0.825, displayHeight * 0.825);
+    createCanvas(windowWidth, windowHeight);
     colorMode(HSB, 360, 100, 100, 255);
     timeToNextSpawn = random(0.25);
 }
@@ -18,6 +18,10 @@ function draw() {
     }
 
     updateFireworks();
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 function updateFireworks() {
