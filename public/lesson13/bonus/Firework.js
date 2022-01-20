@@ -28,6 +28,10 @@ class Firework {
         }
 
         this.updateThrust();
+        this.updateFireworkParticles();
+    }
+
+    updateFireworkParticles() {
         for (let i = this.fireworkParticles.length - 1; i >= 0; i--) {
             const fireworkParticle = this.fireworkParticles[i];
             if (fireworkParticle.shouldRemove()) {
@@ -36,19 +40,6 @@ class Firework {
                 fireworkParticle.update();
             }
         }
-    }
-
-    explode() {
-        const particles = random(50, 100);
-        const particleColor = color(random(360), 100, 100);
-        for (let i = 0; i < particles; i++) {
-            this.fireworkParticles.push(new FireworkParticle(this.position, particleColor));
-        }
-        this.exploded = true;
-    }
-
-    shouldThrust() {
-        return this.position.y > this.targetY;
     }
 
     updateThrust() {
@@ -62,8 +53,25 @@ class Firework {
         }
     }
 
+    shouldThrust() {
+        return this.position.y > this.targetY;
+    }
+
+    explode() {
+        const particles = random(50, 100);
+        const particleColor = color(random(360), 100, 100);
+        for (let i = 0; i < particles; i++) {
+            this.fireworkParticles.push(new FireworkParticle(this.position, particleColor));
+        }
+        this.exploded = true;
+    }
+
     display() {
         this.displayThrust();
+        this.displayFireworkParticles();
+    }
+
+    displayFireworkParticles() {
         for (let i = 0; i < this.fireworkParticles.length; i++) {
             this.fireworkParticles[i].display();
         }
